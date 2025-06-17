@@ -1,0 +1,32 @@
+.\modules\defense\marquage.py: def defense(self, joueur):
+.\modules\defense\marquage.py: def se_demarquer(self):
+.\modules\moteur\actions.py: def passe(self, emetteur, recepteur) :
+.\modules\moteur\actions.py: def tir(self, joueur):
+.\modules\moteur\actions.py: def resultat_tir(self,joueur):
+.\modules\moteur\actions.py: def recup_ballon(self, joueur : Joueur) :
+.\modules\moteur\decision.py: def choix_joueur(self, joueur: Joueur):
+.\modules\moteur\engagement.py: def engagement(self):
+.\modules\placement\formation.py: def placement_initial(self) :
+.\modules\placement\formation.py: def cible_attaque(self, joueur):
+.\modules\placement\formation.py: def reinitialiser_affectations(self):
+.\modules\placement\position_utils.py: def placer_entre(self, adversaire_pos, but_pos, facteur):
+.\modules\placement\position_utils.py: def position_aleatoire(position: Tuple[float, float], facteur = config.fact_alea_pos) -> Tuple[float, float]:
+.\modules\util\but.py: def position_but_adverse(self,joueur):
+.\modules\util\but.py: def position_gardien_adverse(self, joueur):
+.\modules\util\chrono.py: def update_chrono_attaque(self):
+.\modules\util\distance.py: def distance_au_joueur(self, autre_joueur):
+.\modules\util\distance.py: def distance_au_point(self, x, y):
+.\modules\util\distance.py: def distance_ballon(self, joueur : Joueur) -> float:
+.\pages\ballon.py: def __init__(self,position):
+.\pages\joueur.py: def __init__(self, nom, equipe, poste, position, endurance, precision_tir, agressivite,puissance,arret):
+.\pages\joueur.py: def se_deplacer_vers(self, cible_x, cible_y, vitesse):
+.\pages\joueur.py: def tir(self,tireur: Joueur) :
+.\pages\joueur.py: def mieux_placé(self, joueur):
+.\pages\joueur.py: def mouvement_vers(self, cible : tuple[float,float]) :
+.\pages\match.py: def __init__(self, equipe_A, equipe_B, JoueursA,JoueursB,):
+.\pages\match.py: def lancement_jeu(self) :
+.\pages\match.py: def afficher_terrain(self,screen):
+.\pages\match.py: def lancement_balle(self):
+.\pages\match.py: def action(self, joueur : Joueur, joueurs : list[Joueur]) :
+.\pages\match.py: def transferer_possession(self):
+.\pages\match.py: def deplacement_ballon(self,depart,arrivee):

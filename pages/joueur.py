@@ -48,17 +48,6 @@ class Joueur:
                 self.endurance -= 1
 
 
-    def distance_au_joueur(self, autre_joueur):
-        """Calcule la distance entre ce joueur et un autre joueur."""
-        x1, y1 = self.position
-        x2, y2 = autre_joueur.position
-        return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
-
-    def distance_au_point(self, x, y):
-        """Calcule la distance entre ce joueur et un point (x, y)."""
-        x1, y1 = self.position
-        return math.sqrt((x - x1) ** 2 + (y - y1) ** 2)
-
     """def passe(self, recepteur) :
         if self.a_le_ballon :
             self.a_le_balon = False
@@ -118,7 +107,3 @@ class Joueur:
             self.position = self.position[0]+ self.vitesse[0]*temps + acceleration[0]/2*(temps**2), self.position[1]+ self.vitesse[1]*temps + acceleration[1]/2*(temps**2)
             self.vitesse = self.vitesse[0] + acceleration[0] *temps, self.vitesse[1] + acceleration[1] *temps
 
-    def se_demarquer(self):
-        ciblex = (1+(self.deplacement/100))*r.uniform(1,2)
-        cibley = (1+(self.deplacement/100))*r.uniform(1,2)
-        return ciblex,cibley
